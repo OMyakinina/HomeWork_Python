@@ -10,7 +10,7 @@ n = int(input('Ввести длину шоколадки '))
 m = int(input('Ввести ширину шоколадки '))
 k = int(input('Ввести количество долек '))
 
-if k % m == 0 or k % n == 0:
+if (k % m == 0 or k % n == 0) and k < n * m:
     print('Можно')
-else:
+else: 
     print('Нельзя')
