@@ -10,3 +10,17 @@
     3
     -> 1"""
 
+import random
+n = int(input ('Введите количество элементов массива\n'))
+lst=[]
+for i in range (n):
+    lst.append(random.randint(-10,20))
+print(lst)
+
+count = 0 
+x = int(input('Введите элемент, который нужно найти\n'))   
+
+for i in lst:
+    if i == x:
+        count += 1
+print('Число x встречается ', count, ' раз ')     
