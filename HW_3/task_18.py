@@ -10,14 +10,23 @@
     -> 7"""
 
 import random
-n = int(input ('Введите количество элементов массива\n'))
-lst=[]
-for i in range (n):
-    lst.append(random.randint(-10,20))
+n = int(input('Введите количество элементов массива\n'))
+lst = []
+for i in range(n):
+    lst.append(random.randint(-10, 20))
+
 print(lst)
 
-x = int(input('Введите элемент, близкий к которому нужно найти\n'))   
+x = int(input('Введите элемент, близкий к которому нужно найти\n'))
+
+min = abs(lst[0] - x)
+#result = None
 
 for i in lst:
-    if (i-x) == 1 or (i-x) == -1:
-        print(i)     
+    if abs(i - x) < min:
+        min = abs(i - x)
+        result = i
+    elif min == abs(i - x):
+        result = i
+
+print('Самый близкий по величине элемент - ', result)
