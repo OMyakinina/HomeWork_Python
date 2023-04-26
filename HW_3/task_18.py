@@ -20,7 +20,6 @@ print(lst)
 x = int(input('Введите элемент, близкий к которому нужно найти\n'))
 
 min = abs(lst[0] - x)
-#result = None
 
 for i in lst:
     if abs(i - x) < min:
@@ -28,5 +27,6 @@ for i in lst:
         result = i
     elif min == abs(i - x):
         result = i
+        break
 
 print('Самый близкий по величине элемент - ', result)
