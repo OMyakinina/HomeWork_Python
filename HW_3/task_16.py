@@ -13,8 +13,8 @@
 import random
 n = int(input ('Введите количество элементов массива\n'))
 lst = []
-for i in range (n):
-    lst.append(random.randint(-10,20))
+for i in range(n):
+    lst.append(random.randint(-10, 20))
 print(lst)
 
 count = 0 
