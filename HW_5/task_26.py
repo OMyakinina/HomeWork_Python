@@ -5,11 +5,14 @@
 A = 3; B = 5 -> 243 (3⁵)
     A = 2; B = 3 -> 8 """
 
+
 def power(base, exponent):
     if (exponent == 1):
         return base
     if (exponent != 1):
-        return (base * power(base, exponent -1))
+        return (base * power(base, exponent - 1))
+
+
 base = int(input("Введите основание: "))
 exponent = int(input("Введите показатель степени: "))
-print("Возведение в степень равно: ", power(base, exponent))    
+print("Возведение в степень равно: ", power(base, exponent))
