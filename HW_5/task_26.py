@@ -7,9 +7,9 @@ A = 3; B = 5 -> 243 (3⁵)
 
 
 def power(base, exponent):
-    if (exponent == 1):
-        return base
-    if (exponent != 1):
+    if exponent == 0:
+        return 1
+    if exponent != 0:
         return (base * power(base, exponent - 1))
 
 
